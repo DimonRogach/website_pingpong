@@ -1,0 +1,153 @@
+body{background: #33689d;}
+h1{
+	text-align: center;
+	font-family:"Comic Sans MS";
+	color: Pink;
+	font-size: 24;
+}
+nav{
+	margin: 27px auto 0;
+	position: relative;
+	width: 445px;
+	height: 50px;
+	background-color: #535d67;
+	border-radius:1px solid black;
+	box-shadow:2px 2px 4px #000;
+}
+nav a{
+	line-height: 50px;
+	height: 100%;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration:none;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+}
+nav .animation{
+	position: absolute;
+	height: 100px;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+a:nth-child(1){
+	width: 100px;
+	height: 50px;
+}
+a:nth-child(2){
+	width: 110px;
+	height: 50px;
+}
+a:nth-child(3){
+	width: 100px;
+	height: 50px;
+}
+a:nth-child(4){
+	width: 110px;
+	height: 50px;
+}
+nav .start-home, a:nth-child(1):hover ~ .animation{
+	width: 100px;
+	height: 50px;
+	left: 0;
+	background-color: #1abc9c;
+}
+nav .start-home, a:nth-child(2):hover ~ .animation{
+	width: 110px;
+	left: 100px;
+	background-color: #1abc9c;
+}
+nav .start-home, a:nth-child(3):hover ~ .animation{
+	width: 100px;
+	left: 215px;
+	background-color: #1abc9c;
+}
+nav .start-home, a:nth-child(4):hover ~ .animation{
+	width: 140px;
+	left: 303px;
+	background-color: #1abc9c;
+}
+footer{
+	width: 100%;
+	height: auto;
+	background: #4169E1;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 25px;
+}
+footer p{
+	color: white;
+}
+footer a{
+	color: white;
+	font-size: 14px;
+	margin-left: 10px;
+	text-decoration: none;
+}
+footer a:hover{
+	border-bottom: 2px solid white;
+	padding-right: 10px;
+}
+.social img{
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+.social img:hover{
+	background: #FFFFFF;
+	border-radius: 50%;
+}
+table{
+	font-family: sans-serif;
+	text-align: left;
+	border-collapse: separate;
+	border-spacing: 5px;
+	background:#ece9e0 ;
+	color: #656665;
+	border: 16px solid #ece9e0 ;
+	border-radius: 20px;
+}
+th{
+	font-size: 18px;
+	padding: 10px;
+}
+td{
+	background: #f5d7bf;
+	padding: 10px;
+}
+.ing1{
+	width: 100px;
+	height: auto;
+}
+.clock{
+	width: 550px;43
+	height: 100px;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	left: 19%;
+	top: 13%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.clock div{
+	color: #202020;
+	position: relative;
+	background-color: #ffffff;
+	height:100%;
+	width: 150px;
+	display: flex;
+	align-items:center;
+	justify-content: center;
+	font-family:'Open Sans',sans-serif;
+	font-size: 60px;
+	border-radius: 5px;
+	box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+	letter-spacing: 3px;
+}
+.clock span{
+	font-weight: bolder;
+	font-size: 60px;
+}

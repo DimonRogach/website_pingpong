@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ping Pong site</title>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" href="Images/icon.png">
+	<link rel="stylesheet"
+	type="text/css"
+	href="first.css"/>
+</head>
+<body text="white" link="green" alink="red" vlink="white">
+	<font face="Sans-serif" size="5px">
+		<script>
+			var h=(new Date()).getHours();
+			if (h > 23 || h < 7) document.write('It is already night, time to sleep!');
+			if (h > 6 && h < 9) document.write('It is morning already, enough sleeping!');
+			if (h > 9 && h < 19) document.write('It is not evening yet, time to work!');
+			if (h > 18 && h < 23) document. write('It is already evening, and you have not rested yet! Stop working!');
+			var bigsize = "450";
+			var smallsize = "300";
+			function changeSizeImage(im) {
+				if(im.height == bigsize) im.height = smallsize;
+				else im.height = bigsize;}
+			</script> </font>
+			<div class="clock">
+				<div id="hour">00</div>
+				<span>:</span>
+				<div id="minute">00</div>
+				<span>:</span>
+				<div id="seconds">00</div>
+			</div>
+			<script>
+				var hour = document.getElementById("hour");
+				var minute = document.getElementById("minute");
+				var seconds = document.getElementById("seconds");
+				var clock = setInterval(
+					function time(){
+						var date_now = new Date();
+						var hr = date_now.getHours();
+						var min = date_now.getMinutes();
+						var sec = date_now.getSeconds();
+						if(hr < 10)
+							hr = "0" + hr;
+						if(min < 10)
+							min = "0" + min;
+						if(sec < 10)
+							sec = "0" + sec;
+						hour.textContent = hr;
+						minute.textContent = min;
+						seconds.textContent = sec;},1000);
+					</script>
+					<br><br><br><br><br><br><br><br>
+					<div>
+						<h1><I>Ping Pong</I></h1>
+						<hr>
+						<nav>
+							<a href="http://www.google.com" target="_blank" title="Searching system Google" >Google</a>
+							<a href="http://www.vntu.edu.ua"target="_blank" title="The official website of the university">VNTU</a>
+							<a href="https://www.uttf.com.ua/"target="_blank" title="The official website of the table tennis federation">FNTU</a>
+							<a href="facts.html"target="_blank" title="Interesting facts">Facts</a>
+							<div class="animation start-home"></div>
+						</nav>
+						<br>
+						<hr>
+						<ol type="1">
+							<li><font face="Palatino Linotype" size="4"><a href="#Rules">Rules of the game</font></a></li>
+							<li><font face="Palatino Linotype" size="4"><a href="#History">History of the game</font></a></li>
+							<li><font face="Palatino Linotype" size="4"><a href="#Facts">The main facts about Ping Pong</font></a></li>
+						</ol>
+						<hr>
+						<p>
+							<font face="Palatino Linotype" color="#C0C0C0" size="5">
+								<a name="Rules"></a>
+								<B><font color="black">Rules of the game.</font></B>
+								<font color="white">Greetings, dear players, before starting the game, read the rules
+									games The game is designed for two players. When starting the application, you can register by clicking on
+									the corresponding "Registration" button. If you do not want to go through registration, then you will play in the mode
+									guest (Player1 and Player2, respectively). Rackets are controlled using the appropriate keys
+									keyboard. The game is played up to seven points. The first player to score 7 points is the winner.
+								See the relevant controls below.</font></p>
+								<p align="center" style="color:black;font-family:Palatino Linotype;font-size:14"><B>Control elements</B></p>
+								<table align="center">
+									<tr>
+										<th>Movement of rackets</th>
+										<th>Player on the left</th>
+										<th>Player on the right</th>
+									</tr>
+									<tr>
+										<td>The racket moves up</td>
+										<td align="center"><img src="Images/W_button.png" class="ing1"></td>
+										<td align="center"><img src="Images/U_button.png" class="ing1"></td>
+									</tr>
+									<tr>
+										<td>The racket moves down</td>
+										<td align="center"><img src="Images/S_button.png" class="ing1"></td>
+										<td align="center"><img src="Images/D_button.png" class="ing1"></td>
+									</tr>
+								</table>
+								<br>
+								<table align="center">
+									<tr>
+										<th align="center">Exit the program</th>
+									</tr>
+									<tr>
+										<td>The program stops working</td>
+										<td align="center"><img src="Images/E_button.png" class="ing1"></td>
+									</tr>
+								</table>
+								<figure align="center">
+									<img src="Images/first.jpg" height="450" align="center" vspace="15" hspace="15" border="1"onclick="changeSizeImage(this)"><figcaption>
+										<font face="Comic Sans MS" color="whitesmoke" size="3">Men's singles match (World Championship 2013)
+										</font></figcaption></figure>
+										<a name ="History"></a>
+										<p align="center" style="color:black;font-family:Palatino Linotype;font-size:14"><B>History of the game.</B></p>
+										<font face="Palatino Linotype" color="#C0C0C0" size="5">
+											<font color="white">
+												<p>Most experts believe that table tennis appeared in England, as a kind of big tennis. It is possible that table tennis originated in the USA, India or South Africa (it is assumed that in the last two countries table tennis began to be played by British officers posted there).</p>
+												<p>Soon, the game from the open air moved indoors — it was played on the floor. Later, table games appeared. Simple equipment, and most importantly, the small size of the playground allowed to play anywhere. Then there were no defined rules. Balls were made of strings, books placed on the table were a net, and pieces of thick cardboard were rackets. For quite a long time, the game was not used as a sport, but only as a means of spending free time and active recreation.</p>
+												<p>In the late eighties of the 19th century, the game became popular largely due to competition among equipment manufacturers, which contributed to the improvement of rackets and balls. Their main manufacturer was the American factory of Parker brothers, Massachusetts. This factory made and exported to England everything for playing Indoor Tennis. However, English companies such as Ayres Ltd. (they advertised the sport as "Indoor Miniature University Tennis"), received their own patents.</p>
+												<p>Balls were made of rubber or cork, they were often sewn into fabric. Rackets were not standardized. Undoubtedly, the main improvement was the hollow ball. Here is one version of its origin:<p>
+													<p>In 1900, a player named James Gibb came across small hollow colored balls in America - children's toys. After returning to England, he tried a similar hollow ball on the table and found that it had a huge advantage over a solid one. Gradually, the shape of the racket began to change. Plywood rackets appeared, their weight decreased by almost three times. New materials for gluing the playing surface began to be used: parchment, leather, velor, etc. The rules of the game were also changing.<p>
+														<p>In England, ping-pong was recognized as a sport at the beginning of 1900, when the first official competition was held. From England, the game came to Austria-Hungary, then to Germany. In 1901, the official tournament was held in India. It can be considered the first international competition. One of the best players of that time, the Indian athlete Nando, won. The name "ping pong" was registered in 1901 by John Jacques and sold to the Parker brothers. The name is formed from the combination of two sounds: Ping - the sound of the ball when it hits the racket, and Pong - when the ball bounces off the table.</p>
+														<p>The appearance of porous, spongy rubber (sponge), which began to be used as a pad on the racket, gave a particularly noticeable impetus to the development of table tennis. In 1902, E. K. Hood covered his racket with rubber, which allowed him to spin the ball. From 1904 to 1921, the popularity of table tennis in Europe and America decreased,
+														largely due to the monopoly of the Parker brothers and John Jaques on the inventory and rules of the game.</p>
+														<p>In 1926, the International Table Tennis Federation (ITTF) was founded. With the appearance of the sponge (1930), the game became more diverse, because due to the tight grip of the racket and the ball, it became possible to add strong spins to it. The trajectory of the ball's flight has changed, and the opportunity to play actively even when it is already in play has opened up
+														fell below the grid. Athletes playing in a defensive style now had to move far away from the table and quickly return to it. The game became more dynamic. Spectators' interest in the competition increased significantly, the world championship competition in London in 1935 was watched by up to 10,000 people every day. In 1936, the ITTF Congress decided to change the name of the game. Instead of the old name ping-pong, table tennis appeared.</p>
+														<p>The main change in the rules of the game can be considered the reduction of the height of the grid (from 17 to 15.25 centimeters), as well as the establishment of a certain height of the playing surface of the table — 76 centimeters from the floor. It was also forbidden to twist the ball with your fingers during the serve. From 1930 to 1951, representatives of Hungary prevailed among the winners of the competition. Since 1951, the best results have been shown by representatives of Asian countries (Japan, Korea, China).</p>
+														<p>Since 1952, with the world championship in Bombay, a new era of table tennis began, associated with the entry of Japanese athletes into the international arena. The Japanese introduced not only a new type of racket cover, but also a unique grip. The system of conducting the game turned out to be unusual, they performed one basic element of the technique - the roll to the right, which was brought to virtuosic accuracy. Another element is excellent command of serves. Directly on serves, Japanese players won from 4 to 10 points in each game. Japanese players were distinguished by their high physical fitness, which allowed them to move quickly and strike instantly. In Bombay, Sato became the world champion among men. Fuji and Hayashi won the men's doubles competition. In the women's doubles competition — Narahara and Nishimura.</p>
+														<p>From 1954 to 1957, only the representatives of the women's team of Romania made a decent resistance to the Japanese tennis players. The style of European athletes began to change. True, most of the players still followed a defensive manner, but the game is becoming more energetic, more inventive. About 130 countries are registered in the ITTF. The World Table Tennis Championships have been held every year since 1926 (with the exception of 1940–1946
+														years), and since 1957 - once every two years. The European Championships have been held since 1958. In 1988, table tennis became an Olympic sport (Seoul, South Korea). Today, more than 40 million players annually participate in official tournaments around the world.</p></font>
+														<a name ="Facts"></a>
+														<h2 align="center"><font color="white">The main facts about Ping Pong</font></h2>
+														<table align="center" border="1" width="50%" bgcolor="#9370DB" cellpadding="15" cellspacing="10">
+															<tr>
+																<font color="black">
+																	<td width="25%" align="center" valign="middle">The first competition</td>
+																	<td width="25%" align="center" valign="middle">1901 year</td>
+																</font>
+															</tr>
+															<tr>
+																<td width="25%" align="center" valign="middle">Inventory</td>
+																<td width="25%" align="center" valign="middle">Racket, ball, table, net</td>
+															</tr>
+															<tr>
+																<td width="25%" align="center" valign="middle">The head of the federation</td>
+																<td width="25%"align="center" valign="middle">Thomas Weikert</td>
+															</tr>
+														</table>
+														<br>
+														<footer>
+															<a href="first.html">HOME</a>
+															<a href="https://www.youtube.com">YOUTUBE</a>
+															<a href="http://www.vntu.edu.ua"target="_blank">VNTU</a>
+															<a href="https://www.uttf.com.ua/"target="_blank">FNTU</a>
+															<hr>
+															<div class="social">
+																<a href="https://www.google.com/intl/ru/gmail/about/"><img src="Images/gmail.png"alt="" width="30"
+																	height="30"></a>
+																	<a href="https://www.facebook.com/dmitro.rogachevsky/"><img src="Images/facebook.png"alt="" width="30"
+																		height="30"></a>
+																		<a href="https://plus.google.com"><img src="Images/google+.png"alt="" width="30" height="30"></a>
+																		<a href="https://www.instagram.com/dima_rogachevsky/"><img src="Images/instagram.png"alt="" width="30"
+																			height="30"></a>
+																			<a href="https://dimonrogach.wixsite.com/website"><img src="Images/portfolio.png"alt="" width="30"
+																				height="30"></a>
+																			</div>
+																			<p style="color: white;font-size:16px; line-height:1px;" align="right">Rohachevskyi Dmytro</p>
+																			<p style="color: white;font-size:16px;" align="right">All rights reserved 2021.</p>
+																		</footer>
+																	</body>
+																	</html>
